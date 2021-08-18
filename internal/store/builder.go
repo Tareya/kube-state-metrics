@@ -24,7 +24,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
-	admissionregistrationv1 "k8s.io/api/admissionregistration/v1"
+	admissionregistrationv1 "k8s.io/api/admissionregistration/v1beta1"
 	appsv1 "k8s.io/api/apps/v1"
 	autoscaling "k8s.io/api/autoscaling/v2beta1"
 	batchv1 "k8s.io/api/batch/v1"

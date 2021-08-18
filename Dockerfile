@@ -2,6 +2,7 @@ ARG GOVERSION=1.15
 FROM golang:${GOVERSION} as builder
 ARG GOARCH
 ENV GOARCH=${GOARCH}
+ENV GOPROXY https://goproxy.cn,direct
 WORKDIR /go/src/k8s.io/kube-state-metrics/
 COPY . /go/src/k8s.io/kube-state-metrics/
 
